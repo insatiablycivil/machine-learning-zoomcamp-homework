@@ -11,4 +11,4 @@ COPY ["*.py", "churn-mode.bin", "./"]
 
 EXPOSE 9696
 
-ENTRYPOINT [ "waitress", "--bind=0.0.0.0:9696", "churn_serving:app"]
+ENTRYPOINT [ "waitress", "--bind=0.0.0.0:9696", "predict:app"]
