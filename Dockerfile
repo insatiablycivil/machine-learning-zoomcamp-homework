@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ["Pipfile", "Pipfile.lock", "./"]
 RUN pipenv install --deploy --system
 
-COPY ["*.py", "churn-mode.bin", "./"]
+COPY ["*.py", "churn-model.bin", "./"]
 
 EXPOSE 9696
 
